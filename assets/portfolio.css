@@ -8,3 +8,6 @@
 .monogram{letter-spacing:-.075em;white-space:nowrap}.monogram .monogram-m{display:inline-block;color:#e9b307;font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:1.13em;line-height:1;transform:skew(-6deg);margin-right:3px}.button-outline{background:transparent;color:var(--ink);border-color:var(--ink)}.button-outline:hover{background:var(--ink);color:var(--paper)}
 @media(max-width:380px){.brand{gap:10px}.brand>span:last-child{font-size:.62rem}.monogram{font-size:1.75rem}}
 @media(max-width:650px){.featured-project>div{min-width:0}.project-visual strong{font-size:2rem}}
+
+/* Explicit yellow accents; versioned stylesheet prevents stale cached branding. */
+.brand .monogram .monogram-m,.hero h1 em{color:#e9b307}
