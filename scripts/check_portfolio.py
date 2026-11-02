@@ -26,6 +26,7 @@ for name,p in pages.items():
   u=urlparse(ref)
   if u.scheme or u.netloc:continue
   target=unquote(u.path) or name
+  if (ROOT/target).is_dir():target=str(Path(target)/"index.html")
   if not (ROOT/target).is_file():errors.append(f'{name}: missing {target}')
   if u.fragment and target in pages and u.fragment not in pages[target].ids:errors.append(f'{name}: missing anchor {ref}')
  text=(ROOT/name).read_text()
@@ -34,7 +35,7 @@ for name,p in pages.items():
  for marker in ['name="description"','rel="canonical"','name="viewport"','<main','Skip to content']:
   if marker not in text:errors.append(f'{name}: missing {marker}')
  for tag,attrs in p.tags:
-  if tag=='script' and attrs.get('src')!='assets/portfolio.js':errors.append(f'{name}: unexpected runtime dependency')
+  if tag=='script' and attrs.get('type')!='application/ld+json' and attrs.get('src')!='assets/portfolio.js':errors.append(f'{name}: unexpected runtime dependency')
 print(f'{len(pages)} active pages; {sum(len(p.refs) for p in pages.values())} references checked')
 if errors:raise SystemExit('\n'.join(errors))
 print('PASS: internal files and anchors, unique IDs, headings, alt text, metadata, no placeholders, no legacy runtime dependencies')
