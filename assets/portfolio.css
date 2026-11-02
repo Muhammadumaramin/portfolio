@@ -5,9 +5,11 @@
 @media print{body{background:white;color:black;font-size:10pt}.site-header,footer,.skip-link,.print-button{display:none!important}main{padding:0;max-width:none}.page-heading{padding:0 0 10px}.page-heading h1{font-size:26pt}.page-heading .eyebrow{display:none}.section{padding-top:20px}.role{grid-template-columns:135px 1fr;padding:15px 0;gap:15px;break-inside:avoid}.role h2{font-size:15pt}.role li{margin-bottom:3px}.education{margin-top:10px}.education article{padding-top:12px}a{color:inherit}.actions{display:none}}
 
 /* MUA identity and resume download, preserving the existing visual system. */
-.monogram{letter-spacing:-.075em;white-space:nowrap}.monogram .monogram-m{display:inline-block;color:#e9b307;font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:1.13em;line-height:1;transform:skew(-6deg);margin-right:3px}.button-outline{background:transparent;color:var(--ink);border-color:var(--ink)}.button-outline:hover{background:var(--ink);color:var(--paper)}
+.monogram{display:inline-flex;align-items:center;letter-spacing:-.07em;white-space:nowrap;line-height:1;font-size:2rem}.signature-m{width:58px;height:60px;max-width:none;flex:none;margin-right:-7px}.monogram .monogram-ua{color:var(--ink);font-family:system-ui,sans-serif;font-weight:600;letter-spacing:-.075em}.brand{gap:18px}.button-outline{background:transparent;color:var(--ink);border-color:var(--ink)}.button-outline:hover{background:var(--ink);color:var(--paper)}
 @media(max-width:380px){.brand{gap:10px}.brand>span:last-child{font-size:.62rem}.monogram{font-size:1.75rem}}
 @media(max-width:650px){.featured-project>div{min-width:0}.project-visual strong{font-size:2rem}}
 
 /* Explicit yellow accents; versioned stylesheet prevents stale cached branding. */
 .brand .monogram .monogram-m,.hero h1 em{color:#e9b307}
+
+@media(max-width:380px){.signature-m{width:49px;height:52px}.brand{gap:12px}}
