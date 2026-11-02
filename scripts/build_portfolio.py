@@ -18,13 +18,13 @@ ROLES = [
 ('Jan 2026 – Jun 2026','Business Analyst · Data & Operations','ELAN RGV Wireless LLC','Corpus Christi, Texas',[
 'Built operational reporting and KPI summaries with Excel, SQL, and Power BI.',
 'Tracked workflows in Asana and translated sales and operations data into practical business updates.']),
-('Jun 2025 – Jul 2025','Data Analytics Intern','Storied Data Inc.','Remote',[
+('May 2025 – Jul 2025','Data Analytics Intern','Storied Data Inc.','Remote',[
 'Created interactive credit spending and eye cancer dashboards; supported data reconciliation and reporting.',
 'Used Excel, SQL, Power BI, and later Python and Streamlit to make analytical findings easier to explore.']),
 ('Fall 2024 – Dec 2025','Graduate Teaching Assistant','Lamar University','Beaumont, Texas',[
 'Tutored mathematics from pre-algebra through Calculus III, linear algebra, differential equations, and statistics in the Math Shop.',
 'Supported MATH 2312 and MATH 1316 instruction and explained quantitative concepts to students with different learning needs.']),
-('Jul 2020 – Jul 2024','E-commerce Marketplace & Operations Lead','Ahmad Traders','Wazirabad, Pakistan',[
+('Jul 2019 – Jul 2024','E-commerce Marketplace & Operations Lead','Ahmad Traders','Wazirabad, Pakistan',[
 'Managed marketplace and retail operations spanning Amazon, Walmart, eBay, Etsy, and Shopify.',
 'Coordinated listings, inventory, customer service, and fulfillment across a catalog of more than 1,200 SKUs.',
 'Used sales reporting and workflow improvements to support stock availability and order accuracy across more than 200 monthly orders.'])]
