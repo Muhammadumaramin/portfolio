@@ -56,7 +56,7 @@ def project_html():
  return ''.join(f'<article class="project" id="{id}"><div class="project-number">{n}</div><div><p class="eyebrow">{cat} · Academic project</p><h2>{title}</h2><p class="question">{q}</p><p>{method}</p><p>{result}</p><p class="tags">{tags}</p><a class="text-link" href="{GH}/{repo}">Explore repository <span aria-hidden="true">↗</span></a></div></article>' for id,n,cat,title,repo,tags,q,method,result in PROJECTS)
 
 def education():
- return '''<div class="education"><article><p class="eyebrow">2024 – 2025</p><h3>M.S. Computational & Quantitative Methods</h3><p>Lamar University, Texas · Completed December 2025 · GPA 4.00 / 4.00</p><p>Applied mathematics, time series, regression, design of experiments, data mining, and statistical inference.</p></article><article><p class="eyebrow">2018 – 2022</p><h3>B.S. Mathematics</h3><p>University of Central Punjab · GPA 3.66 / 4.00</p><p>A foundation in mathematical reasoning, statistics, and computational problem-solving.</p></article></div>'''
+ return '''<div class="education"><article><p class="eyebrow">2024 – 2025</p><h3>M.S. Computational & Quantitative Methods</h3><p>Lamar University, Texas · Completed December 2025 · GPA 4.00 / 4.00</p><p>Applied mathematics, time series, regression, design of experiments, data mining, and statistical inference.</p></article></div>'''
 
 def heading(kicker,title,desc):
  return f'<section class="page-heading"><p class="eyebrow">{kicker}</p><h1>{title}</h1><p class="lead">{desc}</p></section>'
@@ -86,7 +86,6 @@ experience = experience.replace('My work brings together marketplace leadership,
 contact = contact.replace('Connect with me about e-commerce leadership, marketplace strategy, and analytics opportunities.', 'I’m Muhammad Umar Amin, an e-commerce manager based in San Antonio, Texas. Connect with me about e-commerce management, Amazon and Walmart marketplace operations, planning, or business analytics roles.')
 resume = resume.replace('<button class="button print-button"', '<div class="actions"><a class="button" href="output/pdf/Muhammad_Umar_Amin_Resume.pdf?v=resume-3" download="Muhammad_Umar_Amin_Resume.pdf">Download Resume PDF ↓</a></div><button class="button print-button"')
 
-resume = resume.replace('<article><p class="eyebrow">2018 – 2022</p><h3>B.S. Mathematics</h3><p>University of Central Punjab · GPA 3.66 / 4.00</p><p>A foundation in mathematical reasoning, statistics, and computational problem-solving.</p></article>', '')
 
 pages = [
 ('index.html','Muhammad Umar Amin | E-commerce Manager & Analytics','Muhammad Umar Amin is an e-commerce manager in San Antonio, Texas, with Amazon, Walmart, marketplace operations, and data analytics experience.',home),
@@ -106,7 +105,7 @@ def structured_data(filename,title,description):
   'description':'E-commerce manager in San Antonio, Texas, with experience in Amazon, Walmart, marketplace operations, and quantitative analytics.',
   'sameAs':[LI,GH],
   'worksFor':{'@type':'Organization','name':'Haifa Wholesale LLC'},
-  'alumniOf':[{'@type':'CollegeOrUniversity','name':'Lamar University'},{'@type':'CollegeOrUniversity','name':'University of Central Punjab'}],
+  'alumniOf':[{'@type':'CollegeOrUniversity','name':'Lamar University'}],
   'knowsAbout':['E-commerce management','Amazon wholesale operations','Walmart marketplace operations','Inventory reconciliation','Fulfillment operations','Business analytics','SQL','Power BI','Time series forecasting'],
   'knowsLanguage':['English','Urdu']
  }
