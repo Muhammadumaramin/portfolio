@@ -13,3 +13,7 @@ Match the existing article template: cream background, dark-green text, yellow a
 ## Editorial and publishing conventions
 
 Connect topics to Umar's e-commerce, Amazon wholesale, marketplace operations, and analytical expertise. Research factual claims; cite primary sources. Label hypothetical examples and do not invent personal results. Give each article a unique URL, title, description, canonical link, and BlogPosting metadata. Add it to blog.html in the same style and to sitemap.xml. Check links and the deployed layout. Keep the original Muhammadumaramin-github.io repository untouched.
+
+## Navigation and homepage integration
+
+All blog and article headers include Home, Experience, Projects, About, Blog, Contact. The homepage Latest articles section automatically reads article.featured entries from blog.html, sorts by Article NN descending, and displays at most five. Every new entry must retain h2 > a, an immediately following summary paragraph, .post-meta, and an .eyebrow containing Article NN. Increase the sequence for every new publication. Older entries remain on the full blog. When publishing, refresh the homepage static fallback cards for readers without JavaScript and search crawlers. Preserve this behavior and test the five-item limit when changing the template.
