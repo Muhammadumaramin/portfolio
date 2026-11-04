@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   function selectLatest(posts) {
-    return posts.sort((a,b) => b.sequence-a.sequence).slice(0,5);
+    return posts.sort((a,b) => b.sequence-a.sequence).slice(0,4);
   }
   async function refreshArticles() {
     const target=document.querySelector('[data-latest-articles]');

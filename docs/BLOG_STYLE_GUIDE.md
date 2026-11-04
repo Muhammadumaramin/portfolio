@@ -16,4 +16,6 @@ Connect topics to Umar's e-commerce, Amazon wholesale, marketplace operations, a
 
 ## Navigation and homepage integration
 
-All blog and article headers include Home, Experience, Projects, About, Blog, Contact. The homepage Latest articles section automatically reads article.featured entries from blog.html, sorts by Article NN descending, and displays at most five. Every new entry must retain h2 > a, an immediately following summary paragraph, .post-meta, and an .eyebrow containing Article NN. Increase the sequence for every new publication. Older entries remain on the full blog. When publishing, refresh the homepage static fallback cards for readers without JavaScript and search crawlers. Preserve this behavior and test the five-item limit when changing the template.
+All blog and article headers include Home, Experience, Projects, About, Blog, Contact. The homepage Latest articles section automatically reads article.featured entries from blog.html, sorts by Article NN descending, and displays at most four. Every new entry must retain h2 > a, an immediately following summary paragraph, .post-meta, and an .eyebrow containing Article NN. Increase the sequence for every new publication. Older entries remain on the full blog. When publishing, refresh the homepage static fallback cards for readers without JavaScript and search crawlers. Preserve this behavior and test the four-item limit when changing the template.
+
+The homepage shows the four newest articles and a matching View all articles button below the cards linking to blog.html.
