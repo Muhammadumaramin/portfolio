@@ -17,3 +17,10 @@ The home page and resume page offer a downloadable, searchable two-page PDF at `
 ## Content and search visibility
 
 See [SEO and content notes](docs/SEO.md) for implemented metadata, profile structured data, validation, and remaining Search Console verification.
+
+## Project visuals
+
+Project previews and full-size images live in `images/projects/`. `sources.json` records each original repository file, extraction location, caption, and source checksum. Keep charts and screenshots faithful to their sources. The stock app uses its repository cover image, clearly labeled as a cover. Market Basket Analysis and Bank Loan SQL Analysis have no available original visual yet.
+
+`scripts/project_visuals.py` adds the previews when the portfolio is built. New media needs a manifest entry with the matching project number, accessible alt text, preview dimensions, and original source link. Preview images are lazy-loaded; full-size copies open only when selected.
+
