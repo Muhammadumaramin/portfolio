@@ -29,10 +29,10 @@
       "kind": "Forecast evaluation",
       "alt": "ARIMAX forecast in blue compared with actual weekly Walmart sales in red on the holdout period.",
       "caption": "Forecast versus actual sales from the ARIMAX holdout evaluation.",
-      "source_url": "https://github.com/Muhammadumaramin/Time_Series_Forecasting_of_Walmart_Sales/blob/HEAD/Time-Series-Forecasting-of-Walmart-Sales.pdf",
-      "source_file": "Time-Series-Forecasting-of-Walmart-Sales.pdf",
-      "source_sha256": "1d34e723dba69aadd4ef7d3809efea998cfafa10dc30ed17c22eac629cf1a158",
-      "extraction": "Original repository image"
+      "source_url": "https://github.com/Muhammadumaramin/Time_Series_Forecasting_of_Walmart_Sales/blob/HEAD/Time_Series_Forecasting_of_Walmart_Sales.ipynb",
+      "source_file": "Time_Series_Forecasting_of_Walmart_Sales.ipynb",
+      "source_sha256": "d455f1a822700ac4c72c2ce27b626a811e234ffa255ece66736c3a389a44f3b4",
+      "extraction": "Notebook cell 34, stored PNG output"
     },
     {
       "project_number": 4,
@@ -93,10 +93,10 @@
       "kind": "Model output",
       "alt": "Actual and predicted Amazon stock prices plotted over time in the quantitative equities notebook.",
       "caption": "Amazon price comparison from the equities modeling notebook.",
-      "source_url": "https://github.com/Muhammadumaramin/A-Quantitative-Analysis-of-U.S.-Equities/blob/HEAD/A_Quantitative_Analysis_of_U_S__Equities__Forecasting_with_PCA_and_Linear_Regression.pdf",
-      "source_file": "A_Quantitative_Analysis_of_U_S__Equities__Forecasting_with_PCA_and_Linear_Regression.pdf",
-      "source_sha256": "4c7778d97eea0c98ee2bc9912403a4578e28306c29ba1d8dc5932c954ab18c0a",
-      "extraction": "Original repository image"
+      "source_url": "https://github.com/Muhammadumaramin/A-Quantitative-Analysis-of-U.S.-Equities/blob/HEAD/A_Quantitative_Analysis_of_U_S_Equities_Forecasting_with_PCA_and_Linear_Regression_.ipynb",
+      "source_file": "A_Quantitative_Analysis_of_U_S_Equities_Forecasting_with_PCA_and_Linear_Regression_.ipynb",
+      "source_sha256": "58f9add56287c0222ee28740d9d9ffc494a1441f46cc97dde8edfb6506e65da4",
+      "extraction": "Notebook cell 27, stored PNG output"
     },
     {
       "project_number": 9,
@@ -125,10 +125,10 @@
       "kind": "Model comparison",
       "alt": "Grouped bars comparing training and test RMSE for three LQD return models.",
       "caption": "Training and test error comparison from the LQD modeling notebook.",
-      "source_url": "https://github.com/Muhammadumaramin/Quantitative-Modeling-of-LQD-Returns/blob/HEAD/Quantitative_Modeling_of_LQD.pdf",
-      "source_file": "Quantitative_Modeling_of_LQD.pdf",
-      "source_sha256": "195eb15f9f262e6e2ea49fb17dd3bbd4b1960066f276a647e5d2dc9dfe242f68",
-      "extraction": "Original repository image"
+      "source_url": "https://github.com/Muhammadumaramin/Quantitative-Modeling-of-LQD-Returns/blob/HEAD/Quantitative_Modeling_of_LQD_Returns_The_Roles_of_Rate_Risk%2C_Credit_Risk%2C_and_Equity_Sentiment.ipynb",
+      "source_file": "Quantitative_Modeling_of_LQD_Returns_The_Roles_of_Rate_Risk,_Credit_Risk,_and_Equity_Sentiment.ipynb",
+      "source_sha256": "8b10eb19da38fe776d3efe78beeba5c74c0fc318d43a6897f2c9af0692495ec1",
+      "extraction": "Notebook cell 29, stored PNG output"
     },
     {
       "project_number": 11,
@@ -173,10 +173,10 @@
       "kind": "Classification output",
       "alt": "Two classes of synthetic points with unregularized and L2-regularized logistic-regression decision boundaries.",
       "caption": "Decision boundaries from the IRLS comparison notebook.",
-      "source_url": "https://github.com/Muhammadumaramin/A-Comparative-Study-of-Unregularized-and-L2-Regularized-IRLS-Logistic-Regression-Models/blob/HEAD/A_Comparative_Study_of_Unregularized_and_L2_Regularized_IRLS_Logistic_Regression_Models.pdf",
-      "source_file": "A_Comparative_Study_of_Unregularized_and_L2_Regularized_IRLS_Logistic_Regression_Models.pdf",
-      "source_sha256": "c93a359107e116e67c3911fe78a41a22b2a66168ab1d53a05451fe02fa727f45",
-      "extraction": "Original repository image"
+      "source_url": "https://github.com/Muhammadumaramin/A-Comparative-Study-of-Unregularized-and-L2-Regularized-IRLS-Logistic-Regression-Models/blob/HEAD/A_Comparative_Study_of_Unregularized_and_L2_Regularized_IRLS_Logistic_Regression_Models.ipynb",
+      "source_file": "A_Comparative_Study_of_Unregularized_and_L2_Regularized_IRLS_Logistic_Regression_Models.ipynb",
+      "source_sha256": "4f18da7279d36aecd20c5035e9c6f554e92df2c02cca05a3ee1429c33b4f9ba3",
+      "extraction": "Notebook cell 15, stored PNG output"
     },
     {
       "project_number": 14,
@@ -189,10 +189,10 @@
       "kind": "Model validation",
       "alt": "Actual versus predicted test values with a red reference line from the hydrocarbon regression study.",
       "caption": "Actual-versus-predicted test values from the regression notebook.",
-      "source_url": "https://github.com/Muhammadumaramin/Analysis_of_Hydrocarbon_Emissions/blob/HEAD/Analysis-of-Hydrocarbon-Emissions.pdf",
-      "source_file": "Analysis-of-Hydrocarbon-Emissions.pdf",
-      "source_sha256": "ab8fd4a57a094f1d139fc0ee1f9e387b5226a6550267309d375480138fd2f6f6",
-      "extraction": "Original repository image"
+      "source_url": "https://github.com/Muhammadumaramin/Analysis_of_Hydrocarbon_Emissions/blob/HEAD/Analysis_of_Hydrocarbon_Emissions.ipynb",
+      "source_file": "Analysis_of_Hydrocarbon_Emissions.ipynb",
+      "source_sha256": "7ddc7c6a41398ab1e2f6436a331984ff343423694a5109ff897187e1df3aee82",
+      "extraction": "Notebook cell 27, stored PNG output"
     },
     {
       "project_number": 15,
@@ -205,10 +205,10 @@
       "kind": "Statistical analysis",
       "alt": "Histogram of log-transformed cirrhosis death-rate observations.",
       "caption": "Log-transformed distribution from the statistical analysis notebook.",
-      "source_url": "https://github.com/Muhammadumaramin/Statistical-Cirrhosis-Death-Rates/blob/HEAD/Statistical-Cirrhosis-Death-Rates.pdf",
-      "source_file": "Statistical-Cirrhosis-Death-Rates.pdf",
-      "source_sha256": "3c5902a97bfb4dc5401eeb9f7af1fcc5406b1d70ccd9fa15266719c47ead6dbf",
-      "extraction": "Original repository image"
+      "source_url": "https://github.com/Muhammadumaramin/Statistical-Cirrhosis-Death-Rates/blob/HEAD/Statistical_Cirrhosis_Death_Rates.ipynb",
+      "source_file": "Statistical_Cirrhosis_Death_Rates.ipynb",
+      "source_sha256": "e1f99f6c934c59291a0225360664a65fb3abe62eb8aa4f9c08d33c4a459103d9",
+      "extraction": "Notebook cell 12, stored PNG output"
     }
   ],
   "missing_visuals": [
