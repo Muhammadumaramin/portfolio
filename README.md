@@ -18,6 +18,10 @@ The home page and resume page offer a downloadable, searchable two-page PDF at `
 
 See [SEO and content notes](docs/SEO.md) for implemented metadata, profile structured data, validation, and remaining Search Console verification.
 
+## Research and recognition
+
+`research.html` presents verified coauthored publications, conference participation, and selected honors. Edit `content/research.json`, then run `python scripts/research_content.py`. This also updates the homepage highlights, shared Research navigation, and sitemap. See [research maintenance and source notes](docs/RESEARCH.md). The homepage continues to show the latest four journal articles.
+
 ## Project visuals
 
 Project previews and full-size images live in `images/projects/`. `sources.json` records each original repository file, extraction location, caption, and source checksum. Keep charts and screenshots faithful to their sources. The stock app uses its repository cover image, clearly labeled as a cover. Market Basket Analysis and Bank Loan SQL Analysis have no available original visual yet.

@@ -26,16 +26,33 @@ for f in sorted(ROOT.glob('*.html')):
  assert meta['og:url']==expected
  assert 'noindex' not in meta['robots'] and 'index' in meta['robots']
  assert meta['description'] and meta['author']=='Muhammad Umar Amin'
- assert meta['og:title']==p.text['title'] and meta['twitter:title']==p.text['title']
- graph=json.loads(p.text['script'])['@graph']
- person=next(x for x in graph if x['@type']=='Person')
- assert person['name']=='Muhammad Umar Amin' and person['@id']==BASE+'#person'
- page=next(x for x in graph if x['@type'] in ['WebPage','ProfilePage'])
- assert page['url']==expected
- if f.name=='about.html':
-  assert page['@type']=='ProfilePage' and page['mainEntity']['@id']==person['@id']
+ assert meta['og:title']
+ if 'twitter:title' in meta:assert meta['twitter:title']==p.text['title']
+ schema=json.loads(p.text['script']) if p.text.get('script') else None
+ if schema and '@graph' in schema:
+  assert meta['og:title']==p.text['title']
+  assert meta['twitter:title']==p.text['title']
+  graph=schema['@graph']
+  person=next(x for x in graph if x['@type']=='Person')
+  assert person['name']=='Muhammad Umar Amin' and person['@id']==BASE+'#person'
+  page=next(x for x in graph if x['@type'] in ['WebPage','ProfilePage'])
+  assert page['url']==expected
+  if f.name=='about.html':
+   assert page['@type']=='ProfilePage' and page['mainEntity']['@id']==person['@id']
+  if f.name=='research.html':
+   records=json.loads((ROOT/'content/research.json').read_text())['publications']
+   papers=[x for x in graph if x['@type']=='ScholarlyArticle']
+   assert len(papers)==len(records)
+   assert {x['url'] for x in papers}=={x['url'] for x in records}
+   assert all({'@id':person['@id']} in x['author'] for x in papers)
+ elif schema:
+  assert schema['@type']=='BlogPosting'
+  assert schema['mainEntityOfPage']==expected
+  assert schema['author']['name']=='Muhammad Umar Amin'
+ else:
+  assert f.name=='blog.html',f'{f.name}: missing structured data'
  urls.append(expected);titles.append(p.text['title']);descriptions.append(meta['description'])
 assert len(titles)==len(set(titles)) and len(descriptions)==len(set(descriptions))
 locs=[x.text for x in ET.parse(ROOT/'sitemap.xml').findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
 assert set(locs)==set(urls) and len(locs)==len(set(locs))
-print(f'PASS: {len(urls)} pages; unique titles/descriptions; canonical, social metadata, JSON-LD identity and sitemap agreement')
+print(f'PASS: {len(urls)} pages; unique titles/descriptions; canonical, available social metadata, portfolio/research/blog schema and sitemap agreement')
