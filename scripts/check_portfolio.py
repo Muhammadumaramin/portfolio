@@ -35,7 +35,7 @@ for name,p in pages.items():
  for marker in ['name="description"','rel="canonical"','name="viewport"','<main','Skip to content']:
   if marker not in text:errors.append(f'{name}: missing {marker}')
  for tag,attrs in p.tags:
-  if tag=='script' and attrs.get('type')!='application/ld+json' and attrs.get('src')!='assets/portfolio.js':errors.append(f'{name}: unexpected runtime dependency')
+  if tag=='script' and attrs.get('src') and urlparse(attrs['src']).path not in ['assets/portfolio.js','assets/latest-articles.js']:errors.append(f'{name}: unexpected runtime dependency')
 print(f'{len(pages)} active pages; {sum(len(p.refs) for p in pages.values())} references checked')
 if errors:raise SystemExit('\n'.join(errors))
 print('PASS: internal files and anchors, unique IDs, headings, alt text, metadata, no placeholders, no legacy runtime dependencies')

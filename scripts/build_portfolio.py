@@ -3,11 +3,13 @@ from pathlib import Path
 from html import escape
 import json
 from project_visuals import add_project_visuals
+from research_content import capture_home_journal, update_research
 ROOT = Path(__file__).resolve().parents[1]
+HOME_JOURNAL = capture_home_journal(ROOT)
 BASE = 'https://muhammadumaramin.github.io/portfolio/'
 GH = 'https://github.com/Muhammadumaramin'
 LI = 'https://www.linkedin.com/in/muhammad-umar-amin-0a6795257/'
-NAV = [('index.html','Home'),('experience.html','Experience'),('projects.html','Projects'),('about.html','About'),('contact.html','Contact')]
+NAV = [('index.html','Home'),('experience.html','Experience'),('projects.html','Projects'),('about.html','About'),('research.html','Research'),('blog.html','Blog'),('contact.html','Contact')]
 ROLES = [
 ('Jun 2026 – Present','E-commerce Manager','Haifa Wholesale LLC','San Antonio, Texas',[
 'Lead a six-person e-commerce team across marketplace operations, listing quality, fulfillment, returns, and account health.',
@@ -114,4 +116,5 @@ for filename,title,description,body in pages:
 <body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="./" aria-label="Muhammad Umar Amin home"><span class="monogram" aria-hidden="true"><img class="signature-m" src="assets/signature-m.svg" alt="M" width="58" height="60"><span class="monogram-ua">UA</span></span><span>Muhammad Umar Amin</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button><nav id="site-nav" aria-label="Main navigation">{nav}</nav></header><main id="main" tabindex="-1">{body}</main><footer id="contact-section"><div><a class="footer-brand" href="./">Muhammad Umar Amin<span>E-commerce · Strategy · Analytics</span></a><p>Thoughtful analysis. Practical execution.</p></div><div class="footer-links"><a href="{LI}">LinkedIn ↗</a><a href="{GH}">GitHub ↗</a><a href="mailto:umaramin.profile@gmail.com">Email ↗</a></div><p class="copyright">© <span data-year>2026</span> Muhammad Umar Amin</p></footer></body></html>'''
  (ROOT/filename).write_text(html+'\n')
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{canonical(f)}</loc></url>' for f,_,_,_ in pages)+'</urlset>\n')
+update_research(ROOT, HOME_JOURNAL)
 

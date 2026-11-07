@@ -1,0 +1,67 @@
+{
+  "verified_on": "2026-11-07",
+  "scholar_url": "https://scholar.google.com/citations?user=sFvo4sYAAAAJ&hl=en",
+  "publications": [
+    {
+      "id": "digital-twins",
+      "featured": true,
+      "headline": "Digital twins for adaptive supply chains",
+      "title": "Digital Twin-Enabled Predictive Intelligence Framework for Supply Chain 5.0: Hybrid Deep Reinforcement Learning Architecture for Real-Time Adaptive and Self-Optimizing Decision Management",
+      "date": "2026-01-22",
+      "journal": "The Asian Bulletin of Big Data Management",
+      "volume": "6",
+      "issue": "1",
+      "pages": "17–39",
+      "doi": "10.62019/z34j8b27",
+      "url": "https://abbdm.com/index.php/Journal/article/view/446",
+      "authors": ["Omar J. Alkhatib", "Muhammad Irshad Hussain", "Raza Ali Nawaz", "Muhammad Umar Amin", "Ajab Khan"],
+      "summary": "A simulation-based study combining a virtual supply-chain model with learning algorithms to evaluate inventory, sourcing, and distribution decisions under uncertainty.",
+      "approach": "The framework tests decision policies in a simulated multi-stage supply chain, with human oversight included in its design."
+    },
+    {
+      "id": "payment-fraud",
+      "headline": "AI for cost-aware payment fraud detection",
+      "title": "An Advanced AI-Empowered FinTech Framework for Credit Card Fraud Detection in Online Transactions via Sparrow Search Algorithm–Based Adaptive Optimization",
+      "date": "2026-01-23",
+      "journal": "Spectrum of Engineering Sciences",
+      "volume": "4",
+      "issue": "1",
+      "pages": "504–528",
+      "url": "https://thesesjournal.com.medicalsciencereview.com/index.php/1/article/view/1906",
+      "authors": ["Farah Arzu", "Lubna Gul", "Abdul Waheed", "Muhammad Umar Amin", "Shah E Yar Qadeem", "Farooq Alam", "Maroof Ashraf", "Asad Ali"],
+      "summary": "Exploring how adaptive model tuning can identify rare fraudulent transactions while accounting for the unequal costs of missed fraud and false alarms.",
+      "approach": "The proposed method uses Sparrow Search optimization to tune model settings and classification thresholds, with evaluation suited to imbalanced transaction data."
+    },
+    {
+      "id": "geospatial-logistics",
+      "headline": "Geospatial AI for smarter logistics",
+      "title": "Geospatial AI Logistics Networks: Using Satellite Analytics and Machine Learning to Optimize Global Transportation Routes",
+      "date": "2025-09-01",
+      "journal": "Journal of Asian Development Studies",
+      "volume": "14",
+      "issue": "3",
+      "pages": "1852–1865",
+      "doi": "10.62345/jads.2025.14.3.146",
+      "url": "https://poverty.com.pk/index.php/Journal/article/view/1630",
+      "authors": ["Samia Tariq", "Rabia Zafar", "Imran Khan", "Muhammad Umar Amin", "Muhammad Usama Bin Ayyub"],
+      "summary": "Investigating how satellite information and machine learning can support transportation routing, delivery reliability, and more efficient fuel use.",
+      "approach": "The study combines operational records with geographic data and examines routing models, including their data-quality and interpretability challenges."
+    }
+  ],
+  "conference": {
+    "name": "Texas Undergraduate Mathematics Conference",
+    "date_label": "October 2025",
+    "role": "Graduate panelist",
+    "summary": "Represented Lamar University’s master’s program on a graduate panel at St. Mary’s University in San Antonio.",
+    "url": "https://calendar.stmarytx.edu/event/texas-undergraduate-mathematics-conference"
+  },
+  "honors": [
+    {"year": "2025", "category": "Honor society", "title": "Phi Kappa Phi", "description": "Inducted in December 2025."},
+    {"year": "2018", "category": "Scholarship", "title": "Merit-based scholarship", "description": "50% scholarship from the University of Central Punjab."},
+    {"year": "2018", "category": "Scholarship", "title": "PEEF scholarship", "description": "Punjab Educational Endowment Fund scholarship for academic merit."}
+  ],
+  "earlier_honors": [
+    {"year": "2017", "title": "Three-year scholarship", "organization": "Faran Institute of Technology"},
+    {"year": "2016", "title": "Best Academic Performance", "organization": "Faran Institute of Technology"}
+  ]
+}
